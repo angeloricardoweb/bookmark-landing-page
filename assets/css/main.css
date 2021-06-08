@@ -1,0 +1,26 @@
+@import url(../fonts/Rubik-Medium.ttf);
+@import url(../fonts/Rubik-Regular.ttf);
+:root {
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+/* -------------------------------------------------- */
+

@@ -1,0 +1,5 @@
+@import url(../css/main.css);
+
+h1{
+    color: var(--SoftRed);
+}

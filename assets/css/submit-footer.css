@@ -1,0 +1,14 @@
+@import url(../css/main.css);
+
+.attribution {
+    background-color: var(--Dark-Blue);
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+    color: var(--White);
+    margin: 0 auto;
+}
+
+.attribution a {
+    color: var(--Lime-Green);
+}
