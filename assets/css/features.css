@@ -1,25 +1,51 @@
 @import url(../css/main.css);
 .container-features {
-       max-width: 1440px;
+    background-image: url(../img);
+    max-width: 1180px;
+    padding: 0 20px;
     margin: 50px auto;
 }
 
-.btns-features{
+.display-main {
+    min-width: 350px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.display-main h2 {
+    color: var(--VeryDarkBlue);
+    text-align: center;
+}
+
+.display-main p {
+    margin: 20px 0;
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+
+.btns-features {
     display: flex;
     justify-content: center;
-    width: 550px;
-    margin: 20px auto;
+    flex-wrap: wrap;
+    margin: 40px auto;
 }
-.btn-features{
-    padding: 15px 30px;
+
+.btn-features {
+    min-width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 60px;
     background-color: white;
+    color: var(--GrayishBlue);
     border: none;
-    border-bottom: 1px solid var(--GrayishBlue) ;
+    border-bottom: 1px solid var(--GrayishBlue);
 }
-.btn-features:hover{
+
+.btn-features:hover {
     color: var(--SoftRed);
 }
-.btn-features:active{
+
+.btn-features:hover {
     border-bottom: 2px solid var(--SoftRed);
 }
 
@@ -30,38 +56,49 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 0 20px;
 }
 
 .feature-container img {
     min-width: 350px;
-    max-width: 550px;
+    max-width: 500px;
     border: 1px solid red;
 }
 
 .display-features {
     min-width: 350px;
-    max-width: 450px;
-    margin-right: 100px;
-    border: 1px solid red;
+    max-width: 420px;
 }
 
-.divs {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.display-features h2 {
+    color: var(--VeryDarkBlue);
+    margin: 20px 0;
 }
 
-.divs div {
-    width: 90px;
-    height: 90px;
-    background-color: blue;
+.display-features p {
+    line-height: 25px;
+    color: var(--GrayishBlue);
+    margin: 20px 0;
 }
 
-/* script toggle */
-
-.cotainer-on{
-    display: block;
+.display-features button {
+    background-color: var(--SoftBlue);
+    margin: 10px 0;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.527);
 }
-.container-off{
-    display: none;
+
+@media (max-width:950px) {
+    .feature-container {
+        justify-content: center;
+    }
+    .display-features h2 {
+        text-align: center;
+    }
+    .display-features p {
+        text-align: center;
+    }
 }
