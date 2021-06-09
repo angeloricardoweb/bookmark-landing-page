@@ -7,20 +7,63 @@
     --SoftRed: hsl(0, 94%, 66%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    
 }
 
-body{
+body {
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.retangle-left {
+    position: absolute;
+    left: 0px;
+    top: 1100px;
+    z-index: -1;
+    display: inline-block;
+    background-color: var(--SoftBlue);
+    border-radius: 0 0 80px 0;
+    width: 800px;
+    height: 300px;
+}
+
+.retangle-right {
+    position: absolute;
+    right: 0px;
+    top: 250px;
+    z-index: -1;
+    display: inline-block;
+    background-color: var(--SoftBlue);
+    border-radius: 0 0 0 80px;
+    width: 800px;
+    height: 300px;
+}
+
+@media (max-width:1250px) {
+    .retangle-left, .retangle-right {
+        width: 360px;
+    }
+}
+
+@media (max-width: 720px) {
+    .retangle-right{
+        top: 580px;
+
+    }
+    .retangle-left {
+        top: 1300px;
+    }
+    nav{
+        display: none;
+    }
 }
 
 /* -------------------------------------------------- */
-

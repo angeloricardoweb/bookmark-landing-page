@@ -15,6 +15,7 @@
 .display-main h2 {
     color: var(--VeryDarkBlue);
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .display-main p {
@@ -51,7 +52,6 @@
 
 .feature-container {
     padding: 50px 0;
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,8 +62,8 @@
 .feature-container img {
     min-width: 350px;
     max-width: 500px;
-    border: 1px solid red;
 }
+
 
 .display-features {
     min-width: 350px;
@@ -71,6 +71,7 @@
 }
 
 .display-features h2 {
+    letter-spacing: 1px;
     color: var(--VeryDarkBlue);
     margin: 20px 0;
 }
@@ -90,6 +91,8 @@
     color: white;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.527);
 }
+
+
 
 @media (max-width:950px) {
     .feature-container {
