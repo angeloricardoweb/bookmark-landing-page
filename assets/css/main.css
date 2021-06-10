@@ -22,5 +22,13 @@ body{
     font-weight: 400;
 }
 
+
+/* FOOTER AUTHOR */
+
+.authors:hover{
+    color: var(--SoftRed);
+    text-decoration: underline;
+}
+
 /* -------------------------------------------------- */
 

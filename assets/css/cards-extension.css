@@ -1,6 +1,6 @@
 @import url(../css/main.css);
 
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 .browser-extension-area{
     
 }
@@ -12,7 +12,7 @@
 
 .browser-extension-area .browser-extension-header h3{
     color: var(--VeryDarkBlue);
-    font-size: 36px;
+    font-size: 2rem;
     margin-bottom:20px ;
 }
 
@@ -29,9 +29,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 3px 4px rgba(128, 128, 128, 0.37);
+    box-shadow: 0px 8px 8px rgba(175, 175, 175, 0.486);
     max-width: 15rem;
     height: fit-content;
+    border-radius: 8px;
 }
 
 .browser-extension-area .browser-extension-body .card:nth-child(2){
@@ -48,6 +49,7 @@
 .browser-extension-area .browser-extension-body .card .text-card-area h3{
     color: var(--VeryDarkBlue);
     font-size: 1.5rem;
+    margin-bottom:10px ;
 }
 
 .browser-extension-area .browser-extension-body .card .text-card-area p{
@@ -77,5 +79,33 @@
     border-radius: 4px;
     width: fit-content;
     margin: 15px;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    border: var(--SoftBlue) 2px solid;
+    transition:  color 0.4s ease, background-color 0.4s ease;
+}
+
+.browser-extension-area .browser-extension-body .card .btn-add-extension:hover{
+    background-color: white;
+    color: var(--SoftBlue);
+    border: var(--SoftBlue) solid 2px;
+    transition:  color 0.4s ease, background-color 0.4s ease;
+}
+
+
+
+@media screen and (max-width:950px){
+    .browser-extension-area .browser-extension-header{
+        
+    }
+
+    .browser-extension-area .browser-extension-body{
+        flex-wrap: wrap;
+    }
+
+    .browser-extension-area .browser-extension-body .card:nth-child(2){
+        margin-top: 25px;
+    }
+    .browser-extension-area .browser-extension-body .card:nth-child(3){
+        margin-top: 25px;
+    }
 }
