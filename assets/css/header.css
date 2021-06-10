@@ -1,2 +1,114 @@
 @import url(../css/main.css);
+header {
+    background-image: url(../img);
+    max-width: 1180px;
+    padding: 0 20px;
+    margin: 50px auto;
+}
 
+/* navegação */
+
+nav {
+    padding: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin-right: 60px;
+}
+
+nav li {
+    display: inline;
+}
+
+.menu a {
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: black;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.menu button {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    background-color: var(--SoftRed);
+    color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+}
+
+.menu button:hover {
+    color: var(--SoftRed);
+    background-color: white;
+    border: 1px solid var(--SoftRed);
+}
+
+.menu li a:hover {
+    color: var(--SoftRed);
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+
+.display-hero {
+    max-width: 450px;
+}
+
+.hero img {
+    max-width: 560px;
+}
+
+
+.display-hero h1{
+    color: var(--VeryDarkBlue);
+    font-size: 2.8em;
+}
+.display-hero p{
+    margin: 25px 0;
+    color: var(--GrayishBlue);
+}
+
+.btn-hero{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-hero button{
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 15px 25px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.192);
+}
+
+.btn-hero button:nth-child(1){
+    border: 1px solid var(--SoftBlue);
+    color: white;
+    background-color: var(--SoftBlue);
+}
+.btn-hero button:nth-child(2){
+    border: 1px solid rgb(252, 252, 252);
+    background-color: rgb(252, 252, 252);
+    color: var(--GrayishBlue);
+}
+.btn-hero button:nth-child(1):hover{
+    background-color: white;
+    color: var(--SoftBlue);
+}
+.btn-hero button:nth-child(2):hover{
+    border: 1px solid var(--GrayishBlue);
+}
