@@ -1,1 +1,85 @@
 @import url(../css/main.css);
+
+
+.ask-question-area{
+    width: 40vw;
+    min-width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.ask-question-area .ask-question-text-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ask-question-area .ask-question-text-header h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+}
+
+.ask-question-area .ask-question-text-header p{
+    color: var(--GrayishBlue);
+}
+
+.ask-question-area .card-question{
+
+}
+
+.ask-question-area .card-question button{
+    display: block;
+    width: 100%;
+   text-align: left;
+    padding: 17px 0px;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-top: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+    color: var( --VeryDarkBlue);
+    font-size: 1rem;
+    
+}
+
+
+.ask-question-area .card-question button:hover{
+    color: var(--SoftRed);
+}
+.ask-question-area .card-question button.active{
+    
+}
+
+
+
+.ask-question-area .card-question button::after{
+    content: url('../img/icon-arrow.svg');
+    float: right;
+    transform: rotate(0deg);
+    transition: transform 0.4s;
+}
+
+.ask-question-area .card-question button.active::after{
+    transform: rotate(180deg);
+    transition: transform 0.4s;
+    color: var(--SoftBlue);
+}
+
+
+
+
+
+
+
+.ask-question-area .card-question .answer-paragraph-area{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s;
+    padding: 0px 15px;
+    
+}
+
+.ask-question-area .card-question .answer-paragraph-area p{
+    color: var(--GrayishBlue);
+    font-size: 1rem;
+}
