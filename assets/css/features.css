@@ -41,15 +41,12 @@
     border: none;
     border-bottom: 1px solid var(--GrayishBlue);
     transition: 0.3s;
-
 }
 
 .btn-features:hover {
     color: var(--SoftRed);
     border-bottom: 4px solid var(--SoftRed);
 }
-
-
 
 .feature-container {
     padding: 50px 0;
@@ -64,7 +61,6 @@
     min-width: 350px;
     max-width: 500px;
 }
-
 
 .display-features {
     min-width: 350px;
@@ -93,8 +89,6 @@
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.527);
 }
 
-
-
 @media (max-width:950px) {
     .feature-container {
         justify-content: center;
@@ -104,5 +98,11 @@
     }
     .display-features p {
         text-align: center;
+    }
+}
+
+@media (max-width: 390px) {
+    .feature-container img {
+        max-width: 30px;
     }
 }

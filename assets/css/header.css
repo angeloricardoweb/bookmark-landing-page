@@ -31,7 +31,6 @@ nav li {
     padding: 10px 20px;
     text-transform: uppercase;
     transition: 0.3s;
-
 }
 
 .menu button {
@@ -45,7 +44,6 @@ nav li {
     border: 1px solid white;
     padding: 10px 25px;
     transition: 0.3s;
-
 }
 
 .menu button:hover {
@@ -75,36 +73,34 @@ nav li {
 .hero img {
     max-width: 560px;
     position: relative;
-    transition: move 1s ease infinite;
-    
+    animation: move 5s ease infinite;
 }
 
 @keyframes move {
-    0%,100%{
+    0%, 100% {
         top: 0;
     }
-    50%{
+    50% {
         top: 20px;
     }
-    
 }
 
-
-.display-hero h1{
+.display-hero h1 {
     color: var(--VeryDarkBlue);
     font-size: 2.8em;
 }
-.display-hero p{
+
+.display-hero p {
     margin: 25px 0;
     color: var(--GrayishBlue);
 }
 
-.btn-hero{
+.btn-hero {
     display: flex;
     gap: 20px;
 }
 
-.btn-hero button{
+.btn-hero button {
     cursor: pointer;
     border-radius: 6px;
     font-weight: 600;
@@ -113,20 +109,38 @@ nav li {
     transition: 0.3s;
 }
 
-.btn-hero button:nth-child(1){
+.btn-hero button:nth-child(1) {
     border: 1px solid var(--SoftBlue);
     color: white;
     background-color: var(--SoftBlue);
 }
-.btn-hero button:nth-child(2){
+
+.btn-hero button:nth-child(2) {
     border: 1px solid rgb(252, 252, 252);
     background-color: rgb(252, 252, 252);
     color: var(--GrayishBlue);
 }
-.btn-hero button:nth-child(1):hover{
+
+.btn-hero button:nth-child(1):hover {
     background-color: white;
     color: var(--SoftBlue);
 }
-.btn-hero button:nth-child(2):hover{
+
+.btn-hero button:nth-child(2):hover {
     border: 1px solid var(--GrayishBlue);
+}
+
+@media (max-width: 390px) {
+    .hero {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    .hero img {
+        max-width: 350px;
+    }
+    .display-hero h1 {
+        margin: 35px 0;
+        font-size: 28px;
+    }
+    
 }

@@ -54,16 +54,32 @@ body {
 }
 
 @media (max-width: 720px) {
-    .retangle-right{
+    .retangle-right {
         top: 580px;
-
     }
     .retangle-left {
         top: 1300px;
     }
-    nav{
+    nav {
         display: none;
     }
+}
+
+@media (max-width: 390px) {
+    h1,h2,p{
+        text-align: center;
+    }
+    .retangle-right {
+        top: 180px;
+        width: 300px;
+        height: 200px;
+    }
+    .retangle-left {
+        top: 1350px;
+        width: 300px;
+        height: 200px
+    }
+    
 }
 
 /* -------------------------------------------------- */
