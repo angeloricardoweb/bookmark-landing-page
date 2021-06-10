@@ -37,14 +37,16 @@
     background-color: white;
     border-top: 1px solid rgb(221, 221, 221);
     cursor: pointer;
-    color: var( --VeryDarkBlue);
-    font-size: 1rem;
-    
+    color: var(--VeryDarkBlue);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 
 .ask-question-area .card-question button:hover{
     color: var(--SoftRed);
+    transition: color 0.2s ease;
 }
 .ask-question-area .card-question button.active{
     
@@ -56,12 +58,12 @@
     content: url('../img/icon-arrow.svg');
     float: right;
     transform: rotate(0deg);
-    transition: transform 0.4s;
+    transition: transform 0.2s;
 }
 
 .ask-question-area .card-question button.active::after{
     transform: rotate(180deg);
-    transition: transform 0.4s;
+    transition: transform 0.2s;
     color: var(--SoftBlue);
 }
 
@@ -82,4 +84,32 @@
 .ask-question-area .card-question .answer-paragraph-area p{
     color: var(--GrayishBlue);
     font-size: 1rem;
+}
+
+.ask-question-area .question-button-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.ask-question-area .question-button-area .btn-question{
+    background-color: var(--SoftBlue);
+    padding: 14px 22px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+@media screen and (max-width:530px){
+    .ask-question-area{
+        min-width: auto;
+        width: 80vw;
+        
+    }
 }
