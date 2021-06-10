@@ -40,15 +40,16 @@
     color: var(--GrayishBlue);
     border: none;
     border-bottom: 1px solid var(--GrayishBlue);
+    transition: 0.3s;
+
 }
 
 .btn-features:hover {
     color: var(--SoftRed);
+    border-bottom: 4px solid var(--SoftRed);
 }
 
-.btn-features:hover {
-    border-bottom: 2px solid var(--SoftRed);
-}
+
 
 .feature-container {
     padding: 50px 0;

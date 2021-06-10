@@ -30,6 +30,8 @@ nav li {
     font-size: 12px;
     padding: 10px 20px;
     text-transform: uppercase;
+    transition: 0.3s;
+
 }
 
 .menu button {
@@ -42,6 +44,8 @@ nav li {
     color: white;
     border: 1px solid white;
     padding: 10px 25px;
+    transition: 0.3s;
+
 }
 
 .menu button:hover {
@@ -65,11 +69,24 @@ nav li {
 }
 
 .display-hero {
-    max-width: 450px;
+    max-width: 470px;
 }
 
 .hero img {
     max-width: 560px;
+    position: relative;
+    transition: move 1s ease infinite;
+    
+}
+
+@keyframes move {
+    0%,100%{
+        top: 0;
+    }
+    50%{
+        top: 20px;
+    }
+    
 }
 
 
@@ -93,6 +110,7 @@ nav li {
     font-weight: 600;
     padding: 15px 25px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.192);
+    transition: 0.3s;
 }
 
 .btn-hero button:nth-child(1){
