@@ -16,6 +16,7 @@
 }
 
 body {
+    width: 95%;
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -60,17 +61,20 @@ body {
     .retangle-left {
         top: 1300px;
     }
-    nav {
+    .menu {
         display: none;
+    }
+    .menu-mobile{
+        display: block;
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
     h1,h2,p{
         text-align: center;
     }
     .retangle-right {
-        top: 180px;
+        top: 220px;
         width: 300px;
         height: 200px;
     }

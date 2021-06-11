@@ -56,6 +56,77 @@ nav li {
     color: var(--SoftRed);
 }
 
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-mobile span {
+    display: block;
+    margin: 3px 0;
+    width: 20px;
+    height: 3px;
+    background-color: var(--VeryDarkBlue);
+}
+
+.display-menu {
+    display: none;
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--VeryDarkBlue);
+}
+
+.btns-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-menu-mobile {
+    color: white;
+    border: none;
+    border-top: 1px solid var(--GrayishBlue);
+    border-bottom: 1px solid var(--GrayishBlue);
+    padding: 20px;
+    background-color: var(--VeryDarkBlue);
+    opacity: 0.8;
+}
+
+.btn-menu-mobile:active {
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.btn-menu-mobile a {
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.btn-close {
+    border: none;
+    background-color: var(--VeryDarkBlue);
+    opacity: 0.8;
+}
+
+.display-menu div {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 48px 30px 40px;
+}
+
 /* hero */
 
 .hero {
@@ -74,6 +145,11 @@ nav li {
     max-width: 560px;
     position: relative;
     animation: move 5s ease infinite;
+}
+
+.btn-hero {
+    display: flex;
+    justify-content: start;
 }
 
 @keyframes move {
@@ -130,7 +206,10 @@ nav li {
     border: 1px solid var(--GrayishBlue);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 850px) {
+    body {
+        width: 100vw;
+    }
     .hero {
         justify-content: center;
         flex-wrap: wrap-reverse;
@@ -142,5 +221,20 @@ nav li {
         margin: 35px 0;
         font-size: 28px;
     }
-    
+    .hero img {
+        animation: none;
+    }
+    .btn-hero {
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        position: fixed;
+        background-color: white;
+        top: 0;
+        left: 0;
+        padding: 20px 40px;
+        width: 100%;
+        z-index: 2;
+    }
 }
