@@ -179,8 +179,6 @@ header {
         visibility: hidden;
         overflow-y: hidden;
     }
-
-    
     #menu li {
         border: 1px solid var(--VeryDarkBlue);
         border-left: 0;
@@ -198,9 +196,7 @@ header {
         visibility: visible;
         overflow-y: auto;
     }
-
-
-    #btn-mobile>span{
+    #btn-mobile>span {
         display: block;
         background-color: var(--VeryDarkBlue);
         margin: 5px 0;
@@ -208,15 +204,14 @@ header {
         height: 2px;
         transition: 0.5s;
     }
-
-    #nav.active #btn-mobile>span:nth-child(1){
+    #nav.active #btn-mobile>span:nth-child(1) {
         background-color: transparent;
         transform: translatey(5px);
     }
-    #nav.active #btn-mobile>span:nth-child(2){
+    #nav.active #btn-mobile>span:nth-child(2) {
         transform: rotate(45deg);
     }
-    #nav.active #btn-mobile>span:nth-child(3){
-        transform: rotate(-45deg) translate(5px,-5px);
+    #nav.active #btn-mobile>span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 }
