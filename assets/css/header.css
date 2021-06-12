@@ -158,22 +158,41 @@ header {
         display: flex;
         justify-content: center;
     }
+
+
+
+    #header{
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        padding: 15px;
+        background-color: white;
+        align-items: flex-start;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.041);
+    }
+
+    #header img{
+        padding: 10px;
+    }
+
     #btn-mobile {
         background-color: white;
         border: none;
         padding: 10px;
         display: block;
     }
+    
     #menu {
         display: block;
-        z-index: 99;
+        z-index: 999;
         position: absolute;
         opacity: 0.8;
         background-color: white;
-        margin-top: 10px;
         width: 100vw;
         height: 0;
-        top: 90px;
+        top: 75px;
         right: 0;
         transition: .6s;
         visibility: hidden;
@@ -191,8 +210,12 @@ header {
     #menu a {
         padding: 30px 70px;
     }
+
+    
+
     #nav.active #menu {
-        height: 100%;
+        z-index: 9999;
+        height: 100vh;
         visibility: visible;
         overflow-y: auto;
     }
