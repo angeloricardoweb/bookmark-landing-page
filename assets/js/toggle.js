@@ -12,17 +12,17 @@ function toggleMenu() {
 
 document.addEventListener('click', function (e) {
     const elemento = e.target;
-    if (elemento.classList.contains('btn-features')) {
-        toggleMenu()
+    if (elemento.classList.contains('bt-features')) {
+        toggleMenu();
     }
-    if (elemento.classList.contains('btn-pricing')) {
-        toggleMenu()
+    if (elemento.classList.contains('bt-pricing')) {
+        toggleMenu();
     }
-    if (elemento.classList.contains('btn-contact')) {
-        toggleMenu()
+    if (elemento.classList.contains('bt-contact')) {
+        toggleMenu();
     }
-    if (elemento.classList.contains('btn-login')) {
-        toggleMenu()
+    if (elemento.classList.contains('bt-login')) {
+        toggleMenu();
     }
 });
 
