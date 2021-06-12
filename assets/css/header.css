@@ -8,22 +8,19 @@ header {
 
 /* navegação */
 
-nav {
+#header {
     padding: 0 20px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
-    margin-right: 60px;
+#menu {
+    display: flex;
+    align-items: center;
 }
 
-nav li {
-    display: inline;
-}
-
-.menu a {
+#menu a {
     font-weight: 500;
     letter-spacing: 2px;
     color: black;
@@ -33,7 +30,7 @@ nav li {
     transition: 0.3s;
 }
 
-.menu button {
+#menu button {
     cursor: pointer;
     font-size: 12px;
     font-weight: 600;
@@ -46,85 +43,18 @@ nav li {
     transition: 0.3s;
 }
 
-.menu button:hover {
+#menu button:hover {
     color: var(--SoftRed);
     background-color: white;
     border: 1px solid var(--SoftRed);
 }
 
-.menu li a:hover {
+#menu li a:hover {
     color: var(--SoftRed);
 }
 
-.menu-mobile {
+#btn-mobile {
     display: none;
-}
-
-.menu-mobile button {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.menu-mobile span {
-    display: block;
-    margin: 3px 0;
-    width: 20px;
-    height: 3px;
-    background-color: var(--VeryDarkBlue);
-}
-
-.display-menu {
-    display: none;
-    position: fixed;
-    opacity: 0.8;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--VeryDarkBlue);
-}
-
-.btns-menu-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.btn-menu-mobile {
-    color: white;
-    border: none;
-    border-top: 1px solid var(--GrayishBlue);
-    border-bottom: 1px solid var(--GrayishBlue);
-    padding: 20px;
-    background-color: var(--VeryDarkBlue);
-    opacity: 0.8;
-}
-
-.btn-menu-mobile:active {
-    border-radius: 5px;
-    border: 2px solid white;
-}
-
-.btn-menu-mobile a {
-    letter-spacing: 2px;
-    color: white;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.btn-close {
-    border: none;
-    background-color: var(--VeryDarkBlue);
-    opacity: 0.8;
-}
-
-.display-menu div {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 48px 30px 40px;
 }
 
 /* hero */
@@ -206,7 +136,7 @@ nav li {
     border: 1px solid var(--GrayishBlue);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
     body {
         width: 100vw;
     }
@@ -228,13 +158,65 @@ nav li {
         display: flex;
         justify-content: center;
     }
-    nav {
-        position: fixed;
+    #btn-mobile {
         background-color: white;
-        top: 0;
-        left: 0;
-        padding: 20px 40px;
-        width: 100%;
-        z-index: 2;
+        border: none;
+        padding: 10px;
+        display: block;
+    }
+    #menu {
+        display: block;
+        z-index: 99;
+        position: absolute;
+        opacity: 0.8;
+        background-color: white;
+        margin-top: 10px;
+        width: 100vw;
+        height: 0;
+        top: 90px;
+        right: 0;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    
+    #menu li {
+        border: 1px solid var(--VeryDarkBlue);
+        border-left: 0;
+        border-right: 0;
+        text-align: center;
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    #menu a {
+        padding: 30px 70px;
+    }
+    #nav.active #menu {
+        height: 100%;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+
+    #btn-mobile>span{
+        display: block;
+        background-color: var(--VeryDarkBlue);
+        margin: 5px 0;
+        width: 20px;
+        height: 2px;
+        transition: 0.5s;
+    }
+
+    #nav.active #btn-mobile>span:nth-child(1){
+        background-color: transparent;
+        transform: translatey(5px);
+    }
+    #nav.active #btn-mobile>span:nth-child(2){
+        transform: rotate(45deg);
+    }
+    #nav.active #btn-mobile>span:nth-child(3){
+        transform: rotate(-45deg) translate(5px,-5px);
     }
 }

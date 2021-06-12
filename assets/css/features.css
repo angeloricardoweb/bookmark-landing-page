@@ -101,8 +101,9 @@
     }
 }
 
-@media (max-width: 390px) {
-    .feature-container img {
-        max-width: 30px;
+@media (max-width: 420px) {
+    
+    .display-features h2 {        
+        margin: 70px 0 20px;
     }
 }
