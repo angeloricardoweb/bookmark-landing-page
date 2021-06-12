@@ -24,6 +24,10 @@ body {
     margin: 0 auto;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .retangle-left {
     position: absolute;
     left: 0px;
