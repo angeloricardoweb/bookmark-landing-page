@@ -88,17 +88,36 @@ color: rgb(177, 177, 177);
 footer .footer-header  .footer-box button{
     background-color: var(--SoftRed);
     padding: 14px 22px;
-    border: none;
+    border: 2px solid var(--SoftBlue);
     border-radius: 4px;
     color: white;
     cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+footer .footer-header .footer-box button:hover{
+    background-color: white;
+    border: 2px solid var(--SoftRed);
+    color: var(--SoftRed);
+    transition: background-color 0.3s ease, border 0.3s ease color 0.3s ease;
+
 }
 
 footer  .bottom-footer{
     width: 100%;
     height: 4rem;
     background-color: var(--VeryDarkBlue);
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
     
+}
+
+footer .bottom-footer .social-media{
+    display: flex;
+    width: 40vw;
+    justify-content: center;
     
 }
 footer .bottom-footer ul{
@@ -106,6 +125,22 @@ footer .bottom-footer ul{
     
     align-items: center;
     display: flex;
+   
+}
+footer .bottom-footer ul li {
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    transition:  color 0.3s ease;
+}
+
+footer .bottom-footer ul li:hover{
+    color: var(--SoftRed);
+    transition:  color 0.3s ease;
+}
+
+footer .bottom-footer ul li:first-child{
+    margin-right: 60px;
 }
 
 footer .bottom-footer ul  li img{
@@ -127,3 +162,8 @@ footer .footer-header .footer-box form .label-input .error-field{
 
 
 /* TENTANDO COLORIR O SVG TEXT FOOTER */
+
+.fab{
+    font-size: 1.5rem;
+    color: white;
+}
