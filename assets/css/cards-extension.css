@@ -2,7 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 .browser-extension-area{
-    
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .browser-extension-area .browser-extension-header{

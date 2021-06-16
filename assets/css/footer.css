@@ -1,0 +1,70 @@
+@import url(./main.css);
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-header{
+    color: white;
+    text-align: center;
+    background-color:  var(--SoftBlue);
+    width: 100vw;
+    min-height:50vh ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+footer .footer-header .footer-box{
+    max-width: 45vw;
+    margin: 0 auto;
+}
+
+footer .footer-header  .footer-box small{
+    font-family: 'Rubik';
+    letter-spacing: 2px;
+    font-weight: 500;
+
+}
+
+footer .footer-header   .footer-box h3{
+    font-size: 2rem;
+}
+footer .footer-header  .footer-box input[type="email"]{
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 14px 22px;
+}
+
+footer .footer-header  .footer-box input[type="email"]::placeholder{
+color: rgb(177, 177, 177);
+}
+
+footer .footer-header  .footer-box button{
+    background-color: var(--SoftRed);
+    padding: 14px 22px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+footer  .bottom-footer{
+    width: 100%;
+    
+    background-color: var(--VeryDarkBlue);
+}
+
+footer .bottom-footer ul  li object #text-svg{
+    fill: white;
+}
+
+#text-svg{
+    fill: white;
+}
+
+/* TENTANDO COLORIR O SVG TEXT FOOTER */
