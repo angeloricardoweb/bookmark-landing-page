@@ -1,28 +1,24 @@
 @import url(./main.css);
 
 footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color:  var(--SoftBlue);
+    padding: 90px 0;
     width: 100%;
+    
+
 }
 
 footer .footer-header{
     color: white;
     text-align: center;
-    background-color:  var(--SoftBlue);
     width: 100%;
-    min-height:50vh ;
-    display: flex;
-   
-    flex-direction: column;
-   
+    display: flex;   
+    flex-direction: column;   
 }
 
-footer .footer-header .footer-box{
-    
-    max-width: 45vw;
-    margin: 60px auto 0px auto;
+footer .footer-header .footer-box{    
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 footer .footer-header .footer-box form{
@@ -36,7 +32,6 @@ footer .footer-header  .footer-box small{
     font-family: 'Rubik',sans-serif;
     font-weight: 500;
     font-size: 0.7rem;
-
 }
 
 footer .footer-header   .footer-box h3{
@@ -44,11 +39,6 @@ footer .footer-header   .footer-box h3{
     margin: 20px 0px;
 }
 
-footer .footer-header .footer-box .label-input{
-   position: relative;
-    height: 100%;
-    width: 100%;
-}
 
 footer .footer-header  .footer-box .label-input #svg-error{
     position: absolute;
@@ -69,20 +59,22 @@ footer .footer-header  .footer-box .label-input input[type="email"]{
     
 }
 
+
+
 footer .footer-header  .footer-box .label-input input[type="email"].error{
     border: var(--SoftRed) solid 2px;
-   
+    
 }
 
 
 footer .footer-header  .footer-box .label-input input[type="email"]::before{
     content: icon;
     background-color: red;
-   
+    
 }
 
 footer .footer-header  .footer-box .label-input input[type="email"]::placeholder{
-color: rgb(177, 177, 177);
+    color: rgb(177, 177, 177);
 }
 
 footer .footer-header  .footer-box button{
@@ -101,53 +93,56 @@ footer .footer-header .footer-box button:hover{
     border: 2px solid var(--SoftRed);
     color: var(--SoftRed);
     transition: background-color 0.3s ease, border 0.3s ease color 0.3s ease;
-
-}
-
-footer  .bottom-footer{
-    width: 100%;
-    height: 4rem;
-    background-color: var(--VeryDarkBlue);
-    padding: 0px 20px;
-    display: flex;
-    justify-content: space-between;
     
 }
 
-footer .bottom-footer .social-media{
+.bottom-footer{
+    height: 4rem;
+    background-color: var(--VeryDarkBlue);
+    
+    
+}
+
+.container-bot-footer{
+    max-width: 1180px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer .social-media{
     display: flex;
     width: 40vw;
     justify-content: center;
     
 }
-footer .bottom-footer ul{
-    height: 100%;
-    
+.bottom-footer ul{
+    height: 100%;    
     align-items: center;
     display: flex;
-   
+    
 }
-footer .bottom-footer ul li {
+.bottom-footer ul li {
     padding: 10px;
     color: white;
     font-size: 1rem;
     transition:  color 0.3s ease;
 }
 
-footer .bottom-footer ul li:hover{
+.bottom-footer ul li:hover{
     color: var(--SoftRed);
     transition:  color 0.3s ease;
 }
 
-footer .bottom-footer ul li:first-child{
+.bottom-footer ul li:first-child{
     margin-right: 60px;
 }
 
-footer .bottom-footer ul  li img{
+.bottom-footer ul  li img{
     fill: white;
 }
 
-footer .footer-header .footer-box form .label-input .error-field{
+.footer-header .footer-box form .label-input .error-field{
     background: var(--SoftRed);
     font-size: 0.7rem;
     font-style: italic;
@@ -167,3 +162,4 @@ footer .footer-header .footer-box form .label-input .error-field{
     font-size: 1.5rem;
     color: white;
 }
+
