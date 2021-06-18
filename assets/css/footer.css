@@ -96,31 +96,31 @@ footer .footer-header .footer-box button:hover{
     
 }
 
-.bottom-footer{
-    height: 4rem;
-    background-color: var(--VeryDarkBlue);
-    
+.bottom-footer{    
+    background-color: var(--VeryDarkBlue);    
     
 }
 
 .container-bot-footer{
+    border: 1px solid red;
     max-width: 1180px;
+    margin: 0 auto;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.bottom-footer .social-media{
+.social-media{
     display: flex;
-    width: 40vw;
-    justify-content: center;
+    justify-content:end;
     
 }
 .bottom-footer ul{
     height: 100%;    
     align-items: center;
     display: flex;
-    
+    flex-wrap: wrap;    
 }
 .bottom-footer ul li {
     padding: 10px;
@@ -134,9 +134,7 @@ footer .footer-header .footer-box button:hover{
     transition:  color 0.3s ease;
 }
 
-.bottom-footer ul li:first-child{
-    margin-right: 60px;
-}
+
 
 .bottom-footer ul  li img{
     fill: white;
@@ -152,14 +150,28 @@ footer .footer-header .footer-box button:hover{
     left: 0px;
     width: 217px;
     
-    text-align: left;
-}
+    text-align: left;}
 
-
-/* TENTANDO COLORIR O SVG TEXT FOOTER */
 
 .fab{
     font-size: 1.5rem;
     color: white;
+}
+
+@media (max-width: 950px) {
+    .container-bot-footer li{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .social-media li{
+        display: inline-block;
+        width: 90px;
+    }
+    .container-bot-footer{
+        justify-content: center;
+    }
+
+    
 }
 
